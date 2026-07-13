@@ -31,17 +31,16 @@ other, the work increases very fast.
 
 Imagine a Tournament.
 
-Players  
-            │  
-            ▼  
-   ┌──────────────┐  
-   │ Comparisons  │  
-   └──────────────┘  
-            │  
-  ┌─────────┼─────────┐  
-  ▼         ▼         ▼
-
-Player1   Player2   Player3
+             Players
+                │
+                ▼
+       ┌──────────────┐
+       │ Comparisons  │
+       └──────────────┘
+                │
+      ┌─────────┼─────────┐
+      ▼         ▼         ▼
+   Player1   Player2   Player3
 
 More players create many more
 comparisons.
@@ -68,39 +67,39 @@ using namespace std;
 
 int main()
 {
-// Main Function
+    // Main Function
 
-int n = 2;  
+    int n = 2;
 
-// Three Nested Loops  
-for (int i = 1; i <= n; i++)  
-{  
-    for (int j = 1; j <= n; j++)  
-    {  
-        for (int k = 1; k <= n; k++)  
-        {  
-            // Print Combination  
-            cout << "* ";  
-        }  
+    // Three Nested Loops
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            for (int k = 1; k <= n; k++)
+            {
+                // Print Combination
+                cout << "* ";
+            }
 
-        cout << endl;  
-    }  
+            cout << endl;
+        }
 
-    cout << endl;  
-}  
+        cout << endl;
+    }
 
-return 0;
-
+    return 0;
 }
 
 /*
 
 ▶ Execution Output
 
+* * 
+* *
 
-
-
-
+* *
+* *
 
 ⚙ Complexity
 
@@ -180,13 +179,13 @@ avoided for large input sizes.
 
 Three Nested Loops
 
-↓  
+        ↓
 
- n × n × n  
+     n × n × n
 
-    ↓  
+        ↓
 
-   O(n³)
+       O(n³)
 
 ◆───────────────────────────────◆
 
